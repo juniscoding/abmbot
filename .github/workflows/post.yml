@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    enviroment: login  
+    secrets: inherit
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
