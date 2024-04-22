@@ -1,4 +1,4 @@
-import verses from "./verses.json" assert { type: "json" };
+import quotes from "./quotes.json" assert { type: "json" };
 
 
 export default async function getPostText() {
@@ -7,6 +7,6 @@ export default async function getPostText() {
   // const verses = require('./verses.json');
   // const versesArray: { verses: array }[] = verses;
 
-  var random = verses.verses[Math.floor(Math.random() * Object.keys(verses.verses).length)];
+  var random = quotes.quotes[Math.floor(Math.random() * Object.keys(quotes.quotes).length)];
   return random;
 }
