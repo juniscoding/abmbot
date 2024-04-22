@@ -20,5 +20,5 @@ jobs:
       - name: Send post
         run: npm start
         env:
-          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
-          BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
+          BSKY_HANDLE: "queerscripture.bsky.social" 
+          BSKY_PASSWORD: "ygmy-ajuk-6zo4-3wl3" 
