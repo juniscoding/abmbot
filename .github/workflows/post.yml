@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    enviroment: login  
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
@@ -20,5 +21,5 @@ jobs:
       - name: Send post
         run: npm start
         env:
-          BSKY_HANDLE: "queerscripture.bsky.social" 
-          BSKY_PASSWORD: "ygmy-ajuk-6zo4-3wl3" 
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
